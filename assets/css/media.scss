@@ -1,0 +1,346 @@
+@media only screen and (max-width: 1200px) {
+  .interaktiv {
+
+    .interactive-cards {
+      h6 {
+        font-size  : 1rem !important;
+        line-height: 19px;
+      }
+    }
+  }
+
+
+
+  .side .sideNav {
+    margin-top: 10%;
+  }
+
+  .docs {
+    .nav {
+      margin-top: 10.6% !important;
+    }
+  }
+
+  // .sideCourses {
+  //   margin-top: 86% !important;
+  // }
+
+  // .navs {
+  //   margin-top: -8.3% !important;
+  // }
+
+  .univ{
+    display: flex;
+    align-items: center;
+  }
+  .sideNews ul li {
+    font-size: 15px;
+    line-height: 16px;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .main-slider .custom-control {
+    left: -40px !important;
+  }
+
+  .main-slider .item .inner .text {
+    padding: 0 80px !important;
+
+  }
+
+
+  .pageTwo {
+    .single-content {
+      font-size  : 0.9rem;
+      line-height: 130%;
+    }
+
+
+
+    h1 {
+      font-size  : 1.7rem !important;
+      line-height: 35px !important;
+      margin-top : 8% !important;
+    }
+
+    .img-box {
+      display        : flex;
+      justify-content: flex-end;
+      align-items    : center;
+    }
+
+    .img-fluid {
+      width: 80%;
+    }
+
+    button {
+      margin-top: 10px !important;
+    }
+  }
+
+  .header-2 {
+
+    .header-bottom .search {
+      //top: 6px !important;
+    }
+
+    .header-bottom .close-search {
+      top: 8px;
+    }
+  }
+
+  .ground {
+    height       : 6% !important;
+    margin-bottom: -30px !important;
+  }
+
+  .access-close {
+    left: 3.3% !important;
+    top : 9px !important;
+  }
+
+  .charter-main>div>div>div {
+    h1 {
+      font-size: 30px !important;
+    }
+  }
+
+  .sideNav ul li {
+    font-size  : 14px !important;
+    line-height: 12px !important;
+  }
+
+  .side .sideNav {
+    margin-top: 20%;
+  }
+
+  .table.b-table.b-table-stacked-lg>tbody>tr>[data-label]>div {
+    text-align: left;
+  }
+
+
+  .table-wrap tr td:last-child {
+    width: 100% !important;
+  }
+
+  .docs .nav {
+    margin-top: 14% !important;
+  }
+
+
+  .table-wrap tr td {
+    border: 1px solid #eee;
+  }
+
+  .table-wrap tr {
+    margin-bottom: 20px;
+  }
+
+
+
+  .sideCourses ul li {
+    font-size: 15px;
+    line-height: 17px;
+  }
+
+  .structure-styles {
+    .tabs .nav-item a {
+      font-size  : 0.9rem;
+      line-height: 17px;
+    }
+  }
+
+  // .sideCourses {
+  //   margin-top: 130% !important;
+  // }
+
+  .sideCourses ul li {
+    font-size  : 15px;
+    line-height: 13px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .language {
+    span {
+      font-size: 0.75rem;
+    }
+  }
+
+  .main-slider .item .inner .text {
+    padding: 0 0 0 105px !important;
+  }
+
+  .main-slider .custom-control {
+    left: 0px !important;
+  }
+
+  .main-slider .item .inner h6 {
+    font-size    : 2rem;
+    line-height  : 35px;
+    margin-bottom: 16px;
+  }
+
+  .main-slider .item .inner p {
+    font-size: 0.9rem;
+  }
+
+
+  .pageTwo {
+    .img-box {
+      display           : flex;
+      justify-content   : center;
+      // align-items    : center;
+    }
+
+    .img-fluid {
+      width: 30%;
+    }
+
+    .cloud {
+      display: none;
+    }
+  }
+
+  .statistics .inner .univ-title h1 {
+    margin-top: 30px !important;
+    font-size : 1.3rem !important;
+  }
+
+  .univ-title {
+    align-items: center;
+
+    h1 {
+      font-size : 1.3rem;
+      margin-top: 30px;
+    }
+  }
+
+  .access-close {
+    left: 4.3% !important;
+  }
+
+  .side .sideNav {
+    margin-top: 0%;
+  }
+
+  .structure-styles {
+    .main-card {
+    }
+
+    .docs .sideNav ul {
+      margin-top: 38%;
+    }
+
+    .text-inner .line[data-v-3bc0cdee] {
+      margin-bottom: 10px !important;
+      margin-top   : 10px !important;
+    }
+
+    .text .h6 .h6-2[data-v-3bc0cdee] {
+      padding: 10px;
+    }
+
+    .text h6[data-v-3bc0cdee] {
+      font-size  : 12px;
+      line-height: 10px;
+    }
+
+  }
+
+  // .sideCourses {
+  //   margin-top: 10% !important;
+  // }
+
+  .table-wrap {
+    td {
+      border: 1px solid #eee !important;
+    }
+  }
+
+}
+
+@media only screen and (max-width: 576px) {
+  .main-slider .item .inner h6 {
+    font-size  : 1.6rem !important;
+    line-height: 30px !important;
+  }
+
+  .main-slider .item .inner p {
+    font-size: 0.6rem !important;
+  }
+
+  .statistics .animation-play .animate-2nd {
+    .download {
+      svg {
+        width: 30px;
+      }
+    }
+
+  }
+
+  .pageTwo {
+    h1 {
+      font-size  : 1.3rem !important;
+      line-height: 21px !important;
+    }
+  }
+
+  .ground {
+    height: 5%;
+    bottom: -1px !important;
+  }
+
+  .access-close {
+    left: 25px !important;
+  }
+
+  .charter-download {
+    margin: 0 auto;
+    width : 90%;
+  }
+
+  .charter-main>div>div>div h1 {
+    font-size : 25px !important;
+    text-align: center;
+  }
+
+  .structure-styles {
+    h1 {
+      text-align: center;
+    }
+
+    .main-card {
+      height: 29% !important;
+    }
+
+    .tabs .nav {
+      flex-wrap      : wrap;
+      display        : flex;
+      justify-content: center;
+    }
+
+
+  }
+
+  .programCards img {
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .programCards h6 {
+    font-size: 1rem;
+    line-height: 18px;
+  }
+
+  .programCards p {
+    font-size: 0.7rem;
+    line-height: 110%;
+    margin-bottom: 10px;
+  }
+}
+
+
+
+@media only screen and (max-width: 320px) {}

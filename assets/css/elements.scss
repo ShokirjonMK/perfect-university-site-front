@@ -1,0 +1,388 @@
+.form-group {
+  label {
+    display: block;
+  }
+
+  input {
+    line-height: 44px;
+    padding: 0 16px;
+
+    &:focus{
+      box-shadow: none!important;
+    }
+
+    &.hasError {
+      border: 1px solid red !important;
+    }
+  }
+  textarea {
+    &.hasError {
+      border: 1px solid red !important;
+    }
+  }
+
+  textarea{
+    &.hasError {
+      border: 1px solid red !important;
+    }
+  }
+
+  .el-select {
+    display: block;
+    width: 100%;
+
+    &.hasError {
+      input {
+        border: 1px solid red !important;
+      }
+    }
+  }
+
+  small{
+    color: red;
+    display: none;
+    &.hasError{
+      display: block;
+
+    }
+  }
+}
+
+.pointer-events-none {
+  pointer-events: none;
+}
+
+.form-file-wrap {
+  border: 2px dashed #e0e0e0;
+  padding: 24px;
+  text-align: center;
+  border-radius: 4px;
+  position: relative;
+
+  .b-form-file {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+
+    .custom-file-label {
+      height: 100%;
+      border: none;
+      background: transparent;
+
+      .form-file-text {
+        opacity: 0;
+      }
+
+      &:after {
+        display: none;
+      }
+    }
+
+    &.active {
+      .custom-file-label {
+        .form-file-text {
+          opacity: 1;
+          line-height: 34px;
+        }
+      }
+    }
+  }
+
+  .text {
+    i {
+      margin-bottom: 8px;
+    }
+
+    p {
+      span {
+        color: #3474EE;
+      }
+    }
+  }
+
+  &.hasError {
+    border: 2px dashed #ac1515;
+    box-shadow: 0px 0px 1px 2px rgba(239, 15, 15, 0.2);
+  }
+}
+
+.pagination-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-bottom: 20px;
+
+  .pagination {
+    li {
+      margin: 0 8px;
+      width: 40px;
+      height: 40px;
+      border: 1px solid var(--gray-color-2);
+      border-radius: 8px;
+      background-color: #FFFFFF;
+
+      .page-link {
+        width: 40px;
+        line-height: 40px;
+        padding: 0;
+        text-align: center;
+        background: transparent;
+        color: var(--main-dark);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.3s;
+        cursor: pointer;
+        outline: none;
+        box-shadow: none;
+        font-size: 1rem;
+        border: none;
+        border-radius: 8px;
+      }
+
+      &.active {
+        .page-link {
+          background: var(--blue);
+          color: #FFFFFF;
+        }
+      }
+
+      &:hover {
+        opacity: .8;
+        cursor: pointer;
+      }
+
+      &:first-child,
+      &:last-child {
+        .page-link {
+          font-size: 1.4rem;
+        }
+
+      }
+    }
+  }
+}
+
+.breadcrumbs {
+  background: #F6F8FB;
+  overflow: auto;
+}
+
+.bread-crumbs {
+  padding: 24px 0;
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+
+  li {
+    color: #9CA4B1;
+    white-space: nowrap;
+    font-size: 0.75rem;
+    font-weight: 500;
+    line-height: normal;
+    display: inline-flex;
+    text-transform: capitalize;
+    a {
+      text-transform: capitalize;
+      white-space: nowrap;
+      position: relative;
+      padding-right: 20px;
+      align-items: center;
+      display: flex;
+      color: #5A626C;
+      font-size: 0.75rem;
+      font-weight: 500;
+      line-height: normal;
+
+      i {
+        margin-right: 8px;
+      }
+
+      &:after {
+        content: "";
+        display: block;
+        width: 4px;
+        height: 4px;
+        border-radius: 100%;
+        background-color: #CED2D8;
+        position: absolute;
+        right: 8px;
+      }
+
+      &:hover {
+        color: #2678D9;
+      }
+    }
+  }
+}
+
+
+.modal {
+  .modal-dialog {
+    max-width: 1500px;
+
+    @media screen and (max-width: 768px) {
+      width: 90%;
+    }
+
+    .modal-content {
+      border-radius: 8px;
+      border: none;
+      margin:100px;
+      width: 100%;
+      .modal-body{
+        padding: 20px;
+      }
+
+      .modal-header, .modal-footer {
+        display: none;
+      }
+
+      .modal-head {
+        p {
+          font-weight: normal;
+          font-size: 0.875rem;
+          line-height: 19px;
+          color: #44494F;
+          margin-bottom: 8px;
+        }
+
+        h6 {
+          font-size: 1.7rem;
+          margin-bottom: 32px;
+          color: #44494F;
+        }
+
+        .btn-close {
+          position: absolute;
+          z-index: 2;
+          top: -40px;
+          right: 5px;
+        }
+      }
+
+      .modal-my-body {
+        padding: 0;
+
+        p {
+          text-indent: 16px;
+          font-weight: normal;
+          font-size: 1rem;
+          line-height: 30px;
+          text-align: justify;
+          margin-bottom: 12px;
+        }
+        .form-group {
+          margin: 0 0 20px 0;
+          width: 100%;
+          input {
+            background: rgba(142, 144, 166, 0.14);
+            border-radius: 4px;
+            padding: 0 15px;
+            line-height: 40px;
+            height: 40px;
+            width: 100%;
+            display: block;
+            outline: none;
+            box-shadow: none;
+            border: none;
+          }
+        }
+        .btn-btn {
+          background: #6DB0FF;
+          line-height: 40px;
+          padding: 0 20px;
+          color: #fff;
+        }
+      }
+    }
+
+    .bottom{
+      padding-bottom: 20px;
+    }
+  }
+}
+
+.my-pagination {
+  li, button {
+    background-color: #fff !important;
+    border-radius: 8px !important;
+    border: 1px solid #E9EDF2 !important;
+    padding-top: 5px !important;
+    width: 40px !important;
+    height: 40px !important;
+  }
+
+  li.active {
+    background-color: #2678D9 !important;
+  }
+}
+
+.page-wrapper {
+  margin-top: 24px;
+  padding-bottom: 64px;
+}
+
+.left-badge {
+  position: absolute;
+  left: 0;
+  width: 4px;
+  height: 42px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  background-color: #2678D9;
+}
+
+@media (min-width: 1342px) {
+  .container {
+    max-width: 1184px;
+  }
+  .modal .modal-xl {
+    max-width: 1142px;
+  }
+
+
+}
+
+@media (max-width: 1342px) {
+  #modal-xl .modal-dialog.modal-xl{
+    max-width: 1140px !important;
+  }
+}
+.gap-0-5 {
+  gap: 2px;
+
+}
+.gap-1 {
+  gap: 4px;
+}
+.gap-2 {
+  gap: 8px;
+}
+.gap-3 {
+  gap: 12px;
+}
+.gap-4 {
+  gap: 16px;
+}
+.gap-5 {
+  gap: 20px;
+}
+.gap-6 {
+  gap: 24px;
+}
+.gap-7 {
+  gap: 28px;
+}
+.gap-8 {
+  gap: 32px;
+}
+.gap-9 {
+  gap: 36px;
+}
+.gap-10 {
+  gap: 40px;
+}

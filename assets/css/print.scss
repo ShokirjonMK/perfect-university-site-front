@@ -1,0 +1,45 @@
+@media print {
+  .print-block {
+    display: none !important;
+  }
+  .pd {
+    width: 100% !important;
+    max-width: 100% !important;
+    flex: 1 1 100% !important;
+  }
+  .sidebarAppeal {
+    display: none;
+  }
+
+  .navs {
+    display: none;
+  }
+
+  .components {
+    display: none;
+  }
+
+  .sideNews {
+    display: none;
+  }
+
+  .header {
+    display: none !important;
+  }
+
+  .breadcrumbs {
+    display: none;
+  }
+
+  header-1 {
+    display: none !important;
+  }
+
+  header-2 {
+    display: none !important;
+  }
+
+  .footer {
+    display: none;
+  }
+}
