@@ -1,6 +1,6 @@
 <template>
-  <div class="h-100 mt-4" style="z-index: 0">
-    <div class="hero-wrap">
+  <div class="h-100- position-relative " style="z-index: 0">
+    <div class="hero-wrap pt-4">
       <div class="title-wrap">
         <h2 class="">
           2024-2025 o'quv yili uchun qabul boshlandi
@@ -80,13 +80,22 @@ export default {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 1rem;
+  /* background: url("../../static/2.gif") no-repeat; */
+  /* background-color: rgba(0, 0, 0, 0.1); */
+  /* background: url("../../static/og-image.png") no-repeat; */
+  background-size: cover;
 }
 .title-wrap{
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: start;
   gap: 1rem;
   padding: 1rem 1rem 1rem 3rem;
+
+  h2{
+    font-size: 2.5rem;
+  }
 }
 .img-wrap{
   position: relative;
@@ -113,9 +122,30 @@ export default {
   border-radius: 0.45rem;
   background-color: var(--darkBlue);
   color: #fff;
+  border: none;
+  outline: none;
 
   &:hover {
     background-color: var(--blue-hover);
   }
+}
+
+@media (max-width: 998px) {
+  .hero-wrap{
+    grid-template-columns: 1fr;
+  }
+
+  .title-wrap{
+    align-items: center;
+    text-align: center;
+    padding: 2rem .5rem;
+  }
+  .img-wrap{
+    & > img {
+      max-height: 100%;
+      width: auto;
+    }
+  }
+
 }
 </style>
