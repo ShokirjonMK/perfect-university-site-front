@@ -13,6 +13,7 @@
           class="intro-slider-info__subtitle"
           v-html="slider.results[activeIndex].short_description"
         ></div>
+        <button class="intro-slider-navigation link_btn" >Qabulga o'tish</button>
         <div class="intro-slider-navigation">
           <ul class="intro-slider__pagination">
             <li
@@ -230,5 +231,17 @@ export default {
       }
     }
   }
+
+}
+.link_btn {
+  padding: .5rem 3rem;
+  border-radius: .5rem;
+  background-color: var(--darkBlue);
+  color: #fff;
+
+  &:hover{
+    background-color: var(--blue-hover);
+  }
+
 }
 </style>
