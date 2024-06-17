@@ -202,8 +202,8 @@ export default {
     plugins: ['utc'],
   },
   axios: {
-    // baseURL: process.env.BASE_URL,
-    baseURL: 'https://new.perfectuniversity.uz/api/v1',
+    baseURL: process.env.BASE_URL,
+    // baseURL: 'https://api.tpu.uz/',
   },
   build: {
     babel: {

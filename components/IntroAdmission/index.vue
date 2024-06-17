@@ -6,7 +6,7 @@
           2024-2025 o'quv yili uchun qabul boshlandi
         </h2>
         <div class="">On the approval of the regulation on the procedure for obtaining a second and subsequent higher education in higher educational institutions of the republic of uzbekistan</div>
-        <nuxt-link :to="`/${$i18n.locale}/admission/international-applicants`" class="mt-3" >
+        <a href="https://qabul.perfectuniversity.uz" class="mt-3" >
           <button class="link_btn">
             Ariza topshirish
             <svg
@@ -32,12 +32,12 @@
                 />
               </svg>
           </button>
-        </nuxt-link>
+        </a>
       </div>
       <div class="">
         <div class="img-wrap">
-          <img class="position-absolute top-left" src="https://downloader.disk.yandex.ru/preview/f73683e2fba63baf4f098aee255387eef0c9fc891b273d8bd22c7300ec991e90/666c0eb3/sJTY_ihJRzNTl-zecvXYyjNcOgZqRGrkvpVA8r6dJxhD3n-m6jgtY8ScdwUXTnb2mTUmuwmPfkCIxOaQ7fx_9A%3D%3D?uid=0&filename=TPU%20%2820%29.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=0&tknv=v2&size=544x412&crop=1" alt="Logo Pattern" />
-          <img class="position-absolute bottom-right" src="https://downloader.disk.yandex.ru/preview/58b3385cd6514cb322846c7e688ca4eace3288705dd10bad18b5f11a179e811d/666c11c6/L49cGllO4phCfeBKkdk5kZfEIQReUQobJmfMDCWhJLRM6PsPS5ubZas0LAA_vvArzadxjuIvkHrgYtUbb6Czqw%3D%3D?uid=0&filename=TPU%20%2883%29.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=0&tknv=v2&size=427x541&crop=1" alt="Logo Pattern" />
+          <img class="position-absolute top-left" src="../../static/hero2.jpg" alt="Logo Pattern" />
+          <img class="position-absolute bottom-right" src="../../static/hero3.jpg" alt="Logo Pattern" />
         </div>
       </div>
       <!-- <img class="logo-pattern" src="/image/logo-sm.svg" alt="Logo Pattern" /> -->
