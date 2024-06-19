@@ -65,9 +65,9 @@ import { mapState } from 'vuex'
 import ButtonMore from '../../Button/ButtonMore.vue'
 import marqueAcademeicyear1 from '../../marqueAcademicYear1.vue'
 import marqueAcademeicyear2 from '../../marqueAcademicYear2.vue'
-import IntroSlider from '~/components/Intro/IntroSlider.vue'
+// import IntroSlider from '~/components/Intro/IntroSlider.vue'
 import NewIntroSlider from '~/components/Intro/NewIntroSlider.vue'
-import IntroAdmission from '~/components/IntroAdmission'
+// import IntroAdmission from '~/components/IntroAdmission'
 
 export default {
   name: 'MainIntro',
@@ -76,8 +76,8 @@ export default {
     marqueAcademeicyear2,
     ButtonMore,
     CoolLightBox,
-    IntroSlider,
-    IntroAdmission,
+    // IntroSlider,
+    // IntroAdmission,
     NewIntroSlider,
   },
   props: {

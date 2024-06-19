@@ -758,6 +758,7 @@ export default {
   search_placeholder: 'Izlash...',
   empty_search: "Sizning so'rovingiz bo'yicha natija topilmadi",
   programs: 'Dasturlar',
+  structural_division: "Tarkibiy bo'linma",
   og_description:
     'Toshkent Perfect Universiteti O‘zbekiston va Markaziy Osiyodagi iqtisodiyot yo‘nalishidagi eng yirik oliy ta’lim muassasalaridan biri hisoblanadi.',
   departments: 'Departamentlar',

@@ -46,10 +46,10 @@ export const internationalizationLinkers = [
 ]
 
 export const admissionLinkers = [
-  {
-    name: 'faculties_and_departments',
-    link: '/admission/faculties',
-  },
+  // {
+  //   name: 'faculties_and_departments',
+  //   link: '/admission/faculties',
+  // },
   {
     name: 'transfer_students_admissions',
     link: '/admission/transfer-students',
@@ -61,6 +61,21 @@ export const admissionLinkers = [
   {
     name: 'how_do_apply',
     link: '/admission/how-do-apply',
+  },
+]
+
+export const divisionStructure = [
+  {
+    name: 'faculties',
+    link: '/divisions/faculties',
+  },
+  {
+    name: 'directions',
+    link: '/divisions/directions',
+  },
+  {
+    name: 'departments',
+    link: '/divisions/kafedras',
   },
 ]
 

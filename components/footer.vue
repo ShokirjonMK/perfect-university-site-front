@@ -270,9 +270,10 @@
           </div>
           <div class="col-12 col-lg-6 text-lg-right text-end developed-by">
             <p>{{ $t('developed_by') }} :</p>
-            <a class="uic mb-[-5px]" href="https://uic.group/" target="_blank">
+            <!-- <a class="uic mb-[-5px]" href="https://uic.group/" target="_blank">
               <UIcLogo />
-            </a>
+            </a> -->
+            <h6 class="text-uppercase" style="color: #2678D8;" >global softline team</h6>
           </div>
         </div>
       </div>

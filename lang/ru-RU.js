@@ -21,6 +21,7 @@ export default {
   local: 'Для местных студентов',
   english: 'English',
   text_close: 'Закрыть',
+  structural_division: "Структурное подразделение",
   faculty_of_finance_and_accounting:
     'Факультет Финансов и бухгалтерского учета',
   global: 'Для иностранных студентов',

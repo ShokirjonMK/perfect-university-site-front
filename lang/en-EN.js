@@ -748,6 +748,7 @@ export default {
   og_description:
     'Tashkent Perfect University is a non-governmental higher education organization licensed by the State Inspection for Quality Control of Education under the Cabinet of Ministers of the Republic of Uzbekistan.',
   departments: 'Departments',
+  structural_division: "Structural division",
   home_banner: 'Admission for the 2024-2025 academic season has begun at TDIU!',
   local_applicants: 'To local applicants',
   foreign_applicants: 'To foreign applicants',
