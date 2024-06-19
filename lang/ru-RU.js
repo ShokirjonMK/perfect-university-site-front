@@ -10,6 +10,7 @@ export default {
   about_tsue: 'Об университете',
   how_do_apply: 'Как мне подать заявку?',
   team: 'Команда',
+  kafedras: "Кафедры",
   about_tpu: 'Об университете',
   internationalization: 'Интернационализация',
   syllabus: 'Программы',

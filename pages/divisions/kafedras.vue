@@ -11,7 +11,7 @@
       <div class="row">
         <div class="col-12 col-lg-9">
           <h1>
-            {{ $t('departments') }}
+            {{ $t('kafedras') }}
           </h1>
           <KafedraCard :department-list="kafedra" />
         </div>
@@ -38,7 +38,7 @@ export default {
     links() {
       return [
         {
-          title: this.$t('departments'),
+          title: this.$t('kafedras'),
           link: `${this.$i18n.locale}`,
         },
       ]

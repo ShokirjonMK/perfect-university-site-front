@@ -167,7 +167,7 @@ export default {
   multimedia: 'Multimedia',
 
   general_information: 'General information',
-
+  kafedras: "Departments",
   scientific_council: 'Scientific Council',
   special_leader: 'Specialized scientific council',
   phd: 'PhD',

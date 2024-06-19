@@ -754,6 +754,7 @@ export default {
   groups: 'Guruhlar',
   teachers: 'O‘qituvchilar',
   subjects: 'Fanlar',
+  kafedras: 'Kafedralar',
   rooms: 'Xonalar',
   search_placeholder: 'Izlash...',
   empty_search: "Sizning so'rovingiz bo'yicha natija topilmadi",

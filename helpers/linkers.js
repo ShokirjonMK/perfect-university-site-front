@@ -74,7 +74,7 @@ export const divisionStructure = [
     link: '/divisions/directions',
   },
   {
-    name: 'departments',
+    name: 'kafedras',
     link: '/divisions/kafedras',
   },
 ]
