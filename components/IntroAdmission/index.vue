@@ -42,6 +42,53 @@
       </div>
       <!-- <img class="logo-pattern" src="/image/logo-sm.svg" alt="Logo Pattern" /> -->
     </div>
+    <VueSlickCarousel
+      ref="slider"
+      v-bind="settings"
+      class="intro-slider"
+      @afterChange="activeIndex = $event"
+    >
+    <div class="title-wrap">
+        <h2 class="">
+          2024-2025 o'quv yili uchun qabul boshlandi
+        </h2>
+        <div class="">On the approval of the regulation on the procedure for obtaining a second and subsequent higher education in higher educational institutions of the republic of uzbekistan</div>
+        <a href="https://qabul.perfectuniversity.uz" class="mt-3" >
+          <button class="link_btn">
+            Ariza topshirish
+            <svg
+                width="38"
+                height="24"
+                viewBox="0 0 38 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M23 19L31 11.5L23 4"
+                  stroke="white"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M31 11.5H5.5"
+                  stroke="white"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+          </button>
+        </a>
+      </div>
+      <!-- <img
+        v-for="(item, index) in slider.results"
+        :key="index"
+        class="intro-slider__image"
+        :src="item?.image_url"
+        :alt="item?.title"
+      /> -->
+    </VueSlickCarousel>
   </div>
 </template>
 

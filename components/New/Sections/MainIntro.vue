@@ -1,7 +1,8 @@
 <template>
   <div class="main_intro">
-    <IntroAdmission v-if="main.is_active" v-bind="{ slider }" />
+    <!-- <IntroAdmission v-if="main.is_active" v-bind="{ slider }" /> -->
     <!-- <IntroSlider v-if="main.is_active" v-bind="{ slider }" /> -->
+    <NewIntroSlider v-if="main.is_active" v-bind="{ slider }" />
     <div v-else class="container intro">
       <div class="intro__item">
         <h3 class="intro__title">{{ $t('perfect_university') }}</h3>
@@ -65,6 +66,7 @@ import ButtonMore from '../../Button/ButtonMore.vue'
 import marqueAcademeicyear1 from '../../marqueAcademicYear1.vue'
 import marqueAcademeicyear2 from '../../marqueAcademicYear2.vue'
 import IntroSlider from '~/components/Intro/IntroSlider.vue'
+import NewIntroSlider from '~/components/Intro/NewIntroSlider.vue'
 import IntroAdmission from '~/components/IntroAdmission'
 
 export default {
@@ -76,6 +78,7 @@ export default {
     CoolLightBox,
     IntroSlider,
     IntroAdmission,
+    NewIntroSlider,
   },
   props: {
     main: {

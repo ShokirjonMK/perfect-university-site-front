@@ -1,34 +1,21 @@
 <template>
-  <div
-    v-if="slider.results && slider.results.length"
-    class="h-100 position-relative"
-    style="z-index: 0"
-  >
+  <div v-if="slider.results && slider.results.length" class="h-100 position-relative" style="z-index: 0">
     <div class="intro-slider-info">
       <div class="container position-relative">
-        <h2 class="intro-slider-info__title">
+        <h2 class="intro-slider-info__title header">
           {{ slider.results[activeIndex].title }}
         </h2>
-        <div
-          class="intro-slider-info__subtitle"
-          v-html="slider.results[activeIndex].short_description"
-        ></div>
-        <button class="intro-slider-navigation link_btn" >Qabulga o'tish</button>
+        <div class="intro-slider-info__subtitle description" v-html="slider.results[activeIndex].short_description">
+        </div>
+        <a href="https://qabul.perfectuniversity.uz"><button class="intro-slider-navigation link_btn">Ariza topshirish</button></a>
         <div class="intro-slider-navigation">
           <ul class="intro-slider__pagination">
-            <li
-              v-for="(i, idx) in slider.results"
-              :key="idx"
-              :class="{ active: activeIndex === idx }"
-              @click="goToActiveIndex(idx)"
-            >
+            <li v-for="(i, idx) in slider.results" :key="idx" :class="{ active: activeIndex === idx }"
+              @click="goToActiveIndex(idx)">
               <span> {{ idx + 1 }}</span>
             </li>
           </ul>
-          <div
-            v-if="slider.results.length > 1"
-            class="intro-slider__navigation"
-          >
+          <div v-if="slider.results.length > 1" class="intro-slider__navigation">
             <button @click="$refs.slider.prev()">
               <img src="/icons/chevron-left.svg" alt="icon chevron" />
             </button>
@@ -40,19 +27,9 @@
         <img class="logo-pattern" src="/image/logo-sm.svg" alt="Logo Pattern" />
       </div>
     </div>
-    <VueSlickCarousel
-      ref="slider"
-      v-bind="settings"
-      class="intro-slider"
-      @afterChange="activeIndex = $event"
-    >
-      <img
-        v-for="(item, index) in slider.results"
-        :key="index"
-        class="intro-slider__image"
-        :src="item?.image_url"
-        :alt="item?.title"
-      />
+    <VueSlickCarousel ref="slider" v-bind="settings" class="intro-slider" @afterChange="activeIndex = $event">
+      <img v-for="(item, index) in slider.results" :key="index" class="intro-slider__image" :src="item?.image_url"
+        :alt="item?.title" />
     </VueSlickCarousel>
   </div>
 </template>
@@ -94,19 +71,21 @@ export default {
   z-index: 0;
   width: 100%;
   height: 100%;
+
   .slick-list,
   .slick-track {
     border-radius: 0;
     height: 100%;
   }
+
   .slick-slide div {
     height: 100%;
   }
 
   &__image {
-    width: 100%;
+    width: 50%;
     height: 100vh;
-    object-fit: cover;
+    /* object-fit: cover; */
   }
 
   &-info {
@@ -134,10 +113,11 @@ export default {
 
     &__title {
       color: #fff;
-      font-size: 32px;
+      font-size: 42px;
       font-style: normal;
       font-weight: 700;
-      line-height: 132%; /* 42.24px */
+      line-height: 132%;
+      /* 42.24px */
       text-transform: uppercase;
       margin-bottom: 16px;
       max-width: 781px;
@@ -145,19 +125,26 @@ export default {
       z-index: 1;
 
       @media (max-width: 768px) {
-        font-size: 22px;
+        font-size: 24px;
       }
     }
+
     &__subtitle {
       max-width: 681px;
       color: #fff;
-      font-size: 14px;
+      font-size: 22px;
       font-style: normal;
       font-weight: 400;
-      line-height: 136%; /* 19.04px */
+      line-height: 136%;
+      /* 19.04px */
       position: relative;
       z-index: 1;
+
+      @media (max-width: 768px) {
+        font-size: 14px;
+      }
     }
+
   }
 
   &-navigation {
@@ -172,31 +159,38 @@ export default {
   &__pagination {
     display: flex;
     align-items: center;
+
     li {
       cursor: pointer;
       padding: 0 14px;
       border-right: 1px solid #1c89c1;
+
       span {
         color: rgba(255, 255, 255, 0.4);
         font-size: 24px;
         font-style: normal;
         font-weight: 600;
-        line-height: 28px; /* 31.68px */
+        line-height: 28px;
+        /* 31.68px */
         text-transform: uppercase;
 
         transition: 0.3s all;
         display: block;
       }
+
       &:hover span {
         color: rgba(255, 255, 255, 0.7);
       }
+
       &.active span {
         transform: scale(1.1);
         color: white;
       }
+
       &:first-child {
         padding-left: 0;
       }
+
       &:last-child {
         border-right: 0;
       }
@@ -217,30 +211,40 @@ export default {
       background: transparent;
       border-radius: 10000px;
       transition: all 0.3s;
+
       &:hover {
         border: 3px solid #1c89c1;
       }
+
       &:active {
         transform: scale(0.9);
       }
+
       img {
-        filter: invert(100%) sepia(0%) saturate(1229%) hue-rotate(179deg)
-          brightness(121%) contrast(108%);
+        filter: invert(100%) sepia(0%) saturate(1229%) hue-rotate(179deg) brightness(121%) contrast(108%);
         width: 24px;
         height: 24px;
       }
+
     }
   }
 
 }
+
 .link_btn {
+  display: inline-block;
   padding: .5rem 3rem;
   border-radius: .5rem;
   background-color: var(--darkBlue);
   color: #fff;
+  font-size: 18px;
 
-  &:hover{
+  &:hover {
     background-color: var(--blue-hover);
+  }
+
+  @media (max-width: 768px) {
+    font-size: 15px;
   }
 
 }
