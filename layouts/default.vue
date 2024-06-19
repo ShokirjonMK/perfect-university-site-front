@@ -44,7 +44,7 @@ export default {
   background-color: #f6f8fb;
   flex-grow: 1;
   padding-top: 28px;
-  //min-height: 100vh;
+  /* min-height: 100vh; */
 }
 .default-wrapper {
   display: flex;
