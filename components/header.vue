@@ -1100,6 +1100,7 @@ export default {
         display: flex;
         align-items: flex-start;
         color: #86909c;
+        /* color: black; */
         border-bottom: 1px solid rgba(0, 49, 107, 0.1) !important;
         text-transform: none;
         transition: 0.3s all;
@@ -1409,6 +1410,7 @@ i.is-active {
   }
 }
 .menu-links-wrapper:hover .menu-link-item {
+  color: black !important;
   &::after {
     opacity: 1;
     visibility: visible;
