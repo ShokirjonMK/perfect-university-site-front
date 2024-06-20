@@ -235,7 +235,7 @@
                 <p>{{ rector.rector_fullname }}</p>
                 <p style="margin: 0 !important">{{ $t('rector_tsue') }}</p>
               </div>
-              <svg
+              <!-- <svg
                 width="163"
                 height="31"
                 viewBox="0 0 163 31"
@@ -254,7 +254,7 @@
                   d="M63.2264 26.4008C57.0666 29.8009 44.9652 34.0443 39.9365 27.0808C47.8542 28.5633 55.3086 24.1567 63.2264 26.4008Z"
                   fill="#144176"
                 />
-              </svg>
+              </svg> -->
             </div>
           </div>
         </div>

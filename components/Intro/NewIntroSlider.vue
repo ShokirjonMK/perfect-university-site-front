@@ -17,7 +17,7 @@
       </div>
       <div class="right-site">
         <VueSlickCarousel ref="slider" v-bind="settings" class="intro-slider" @afterChange="activeIndex = $event">
-          <img v-for="(item, index) in slider.results" :key="index" class="" :src="item?.image_url"
+          <img v-for="(item, index) in slider.results" :key="index" class="intro-slider-image" :src="item?.image_url"
             :alt="item?.title" />
         </VueSlickCarousel>
       </div>
@@ -177,9 +177,13 @@ export default {
       width: 100%;
       height: 100%;
 
-      img {
-        width: 100%;
-        height: 100vh;
+      .slick-list{
+        height: 100%;
+      }
+
+      img.intro-slider-image {
+        min-width: 100%;
+        min-height: calc(100vh - 200px);
         object-fit: cover;
       }
     }
