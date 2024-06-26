@@ -273,7 +273,7 @@
             <!-- <a class="uic mb-[-5px]" href="https://uic.group/" target="_blank">
               <UIcLogo />
             </a> -->
-            <h6 class="text-uppercase" style="color: #2678D8;" >global softline team</h6>
+            <b class="text-uppercase" style="color: #2678D8; font-size: 13px;" >global softline group</b>
           </div>
         </div>
       </div>

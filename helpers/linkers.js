@@ -66,11 +66,15 @@ export const admissionLinkers = [
 
 export const divisionStructure = [
   {
-    name: 'faculties',
-    link: '/divisions/faculties',
+    name: 'Boshqarma',
+    link: '/divisions/department/1',
   },
+  // {
+  //   name: 'faculties',
+  //   link: '/divisions/faculties',
+  // },
   {
-    name: 'directions',
+    name: "Bo'lim va boshqarmalar",
     link: '/divisions/directions',
   },
   {

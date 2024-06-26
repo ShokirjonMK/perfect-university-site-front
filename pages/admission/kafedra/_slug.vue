@@ -155,13 +155,13 @@
                   </div>
                 </template>
 
-                <template v-slot:cell(pic)="data" style="width: 36px">
-                  <div style="width: 39px">
+                <template v-slot:cell(pic)="data" style="width: 120px">
+                  <div style="width: 120px">
                     <img
                       :src="data.item.image_url"
                       style="
-                        height: 56px;
-                        width: 56px;
+                        /* height: 120px; */
+                        width: 120px;
                         object-fit: cover;
                         border: 1px solid #e8edf2;
                       "
@@ -179,11 +179,11 @@
                     {{ data.item.position }}
                   </div>
                 </template>
-                <template v-slot:cell(phone_number)="data">
+                <!-- <template v-slot:cell(phone_number)="data">
                   <div style="width: 159px !important">
                     {{ data.item.phone_number }}
                   </div>
-                </template>
+                </template> -->
                 <template v-slot:cell(email)="data">
                   <div style="position: relative">
                     <div
@@ -230,10 +230,10 @@ export default {
         { key: 'pic', label: this.$t('pic') },
         { key: 'name', label: this.$t('name') },
         { key: 'position', label: this.$t('position') },
-        {
-          key: 'phone_number',
-          label: `${this.$t('phone_number')}`,
-        },
+        // {
+        //   key: 'phone_number',
+        //   label: `${this.$t('phone_number')}`,
+        // },
         {
           key: 'email',
           label: `${this.$t('email')}`,
