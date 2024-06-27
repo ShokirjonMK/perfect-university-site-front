@@ -116,6 +116,7 @@
                 </div>
               </div>
             </div>
+
             <div>
               <template
                 v-if="kafedraSingle?.mudir && kafedraSingle?.mudir.length"
@@ -137,7 +138,76 @@
                 ></p>
               </div>
 
-              <b-table
+
+
+
+              <h1 style="margin-top: 50px;">
+              {{ $t('team') }}
+            </h1>
+            <div v-if="kafedraSingle?.staffs.length" >
+              <div
+                v-for="(item, index) in kafedraSingle?.staffs"
+                :key="index"
+                class="graduatorsCards"
+                style="margin-top: 50px;"
+              >
+                <div class="alumni__row d-md-flex">
+                  <div class="alumni__img">
+                    <img
+                      class="img-graduators"
+                      :src="item.image_url"
+                      alt="Alumni image"
+                    />
+                  </div>
+                  <div class="w-100" style="padding: 0">
+                    <div class="content">
+                      <div class="st-floor">
+                        <h3>{{ item.title }}</h3>
+                        <span>{{ item.position }}</span>
+                        <div class="line"></div>
+                      </div>
+
+                      <!-- <div class="alumni__link">
+                        <div style="display: grid; gap: 12px" class="ps-2">
+                          <p
+                            v-if="item.reception_days"
+                            class="alumni__links"
+                            style="
+                              display: flex;
+                              align-items: center;
+                              gap: 8px;
+                              margin-bottom: 0 !important;
+                            "
+                          >
+                            <svg
+                              width="20"
+                              height="20"
+                              viewBox="0 0 20 20"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M5.83333 8.33333H14.1667M5.83333 11.6667H10M5.83333 2.5V4.16667M14.1667 2.5V4.16667M5.16667 17.5H14.8333C15.7668 17.5 16.2335 17.5 16.59 17.3183C16.9036 17.1586 17.1586 16.9036 17.3183 16.59C17.5 16.2335 17.5 15.7668 17.5 14.8333V6.83333C17.5 5.89991 17.5 5.4332 17.3183 5.07668C17.1586 4.76308 16.9036 4.50811 16.59 4.34832C16.2335 4.16667 15.7668 4.16667 14.8333 4.16667H5.16667C4.23325 4.16667 3.76654 4.16667 3.41002 4.34832C3.09641 4.50811 2.84144 4.76308 2.68166 5.07668C2.5 5.4332 2.5 5.89991 2.5 6.83333V14.8333C2.5 15.7668 2.5 16.2335 2.68166 16.59C2.84144 16.9036 3.09641 17.1586 3.41002 17.3183C3.76654 17.5 4.23325 17.5 5.16667 17.5Z"
+                                stroke="#2678D9"
+                                stroke-width="1.5"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              />
+                            </svg>
+                            {{ item.reception_days }}
+                          </p>
+                        </div>
+                      </div> -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+
+
+              <!-- <b-table
                 v-if="kafedraSingle?.staffs && kafedraSingle?.staffs.length"
                 id="my-table"
                 class="table"
@@ -179,11 +249,6 @@
                     {{ data.item.position }}
                   </div>
                 </template>
-                <!-- <template v-slot:cell(phone_number)="data">
-                  <div style="width: 159px !important">
-                    {{ data.item.phone_number }}
-                  </div>
-                </template> -->
                 <template v-slot:cell(email)="data">
                   <div style="position: relative">
                     <div
@@ -198,7 +263,7 @@
                     </div>
                   </div>
                 </template>
-              </b-table>
+              </b-table> -->
             </div>
           </div>
           <div class="col-12 col-lg-3">
